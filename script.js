@@ -13,6 +13,10 @@ genGrid.addEventListener('click', (v) => {
                 let cell = document.createElement("div");
                 cell.className = "grid-square";
                 row.appendChild(cell);
+                cell.addEventListener('click', () => {
+                    cell.style.background = '#000000';
+                    cell.style.borderColor = '#FFFFFF';
+                })
             }
         gridContainer.append(row);
         }
