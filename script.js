@@ -1,5 +1,6 @@
-let gridContainer = document.querySelector('#grid-container')
+const gridContainer = document.querySelector('#grid-container')
 const genGrid = document.querySelector('#gen-grid')
+const clearGrid = document.querySelector('#clear-grid')
 
 
 genGrid.addEventListener('click', (v) => {
@@ -18,4 +19,8 @@ genGrid.addEventListener('click', (v) => {
     } else {
         alert("The maximum size is 100x100")
     }
+})
+
+clearGrid.addEventListener('click', () => {
+    gridContainer.textContent = '';
 })
