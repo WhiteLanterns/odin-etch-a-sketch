@@ -1,0 +1,14 @@
+#grid-container {
+    display: flex;
+}
+
+.row {
+    flex-direction: column;
+}
+
+.grid-square {
+    flex-direction: row;
+    border: 1px black solid;
+    width: 1em;
+    height: 1em;
+}
